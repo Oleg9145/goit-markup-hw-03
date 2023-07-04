@@ -322,19 +322,26 @@ body {
 .portfolio-list {
   width: calc((100% - 48px) / 3);
 }
-.projekt-div {
+.portfolio-section {
 }
 .projeckt-ul {
+  column-gap: 24px;
+  row-gap: 48px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .projekt-div {
-  gap: 24px;
+  padding: 32px 16px;
+}
+.der {
   border: 1px solid #e7e9fc;
   background: #fff;
-  column-gap: 24px;
-  row-gap: 48px;
-  padding: 32px 16px;
+
   border-top: none;
+  margin-bottom: 8px;
+}
+.der img {
+  max-width: 100%;
 }
