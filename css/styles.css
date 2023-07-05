@@ -21,7 +21,7 @@ body {
   max-width: 1158px;
   width: 100%;
   margin: 0 auto;
-  outline: solid red;
+
   padding: 0 15px;
 }
 
@@ -43,6 +43,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 /*-------------------------HEADER------------------------*/
 .header {
@@ -63,6 +64,7 @@ body {
 .header-ul {
   display: flex;
   gap: 40px;
+  padding: 24px 0 24px;
 }
 .address-ul {
   display: flex;
@@ -96,7 +98,7 @@ body {
   background-color: var(--color-fon);
 }
 .section-h {
-  width: 496px;
+  max-width: 496px;
   flex-direction: column;
   flex-shrink: 0;
   color: var(--white, #fff);
@@ -111,7 +113,8 @@ body {
   letter-spacing: 0.02em;
 }
 .botton-one {
-  display: flex;
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
   align-items: center;
   gap: 10px;
@@ -126,6 +129,9 @@ body {
   color: #ffffff;
   cursor: pointer;
   margin: 0 auto;
+  margin-top: 48px;
+  height: 56px;
+  border: none;
 }
 .botton-one:focus {
   background-color: #404bbf;
@@ -194,10 +200,12 @@ body {
 .all:hover {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .all:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .index-list {
   background-color: #ffffff;
@@ -218,8 +226,16 @@ body {
   display: flex;
 }
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .strategy-ul {
   gap: 24px;
@@ -232,38 +248,48 @@ body {
 .strategy-ul p {
   width: 264px;
 }
-.strategy-ul li {
+.strategy-li {
   width: calc((100% - 72px) / 4);
 }
 /*------------------------section-photo----------------------*/
 .section-photo-div {
   margin: 0 auto;
 }
+.title-two {
+  margin-bottom: 72px;
+}
 .section-photo {
   padding-bottom: 120px;
+}
 
-  display: flex;
+.section-photo-li {
+  width: calc((100% - 48px) / 3);
 }
 .section-photo-ul {
   padding: 0;
-  display: inline-flex;
-  width: calc((100% - 48px) / 3);
+  display: flex;
+
   gap: 24px;
 }
 /*------------------------our-team----------------------*/
 .our-team {
   display: flex;
+  padding: 120px 0;
 }
 .our-team-div {
   margin: 0 auto;
 }
 .our-team-ul {
   padding: 0;
-  display: inline-flex;
-  width: calc((100% - 72px) / 4);
+  display: flex;
+
   gap: 24px;
 }
+.team-div {
+  padding: 32px 16px;
+}
 .index-list {
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -271,23 +297,11 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-title {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 32px;
-  margin: 0 auto;
-  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .team-par {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 32px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .footer {
@@ -317,13 +331,11 @@ body {
   padding: 96px 0 120px 0;
 }
 
-.projeckt-one {
-}
 .portfolio-list {
+  margin-bottom: 72px;
   width: calc((100% - 48px) / 3);
 }
-.portfolio-section {
-}
+
 .projeckt-ul {
   column-gap: 24px;
   row-gap: 48px;
@@ -332,10 +344,7 @@ body {
   padding-left: 0;
 }
 
-.projekt-div {
-  padding: 32px 16px;
-}
-.der {
+.portfolio-img {
   border: 1px solid #e7e9fc;
   background: #fff;
 
@@ -344,4 +353,8 @@ body {
 }
 .der img {
   max-width: 100%;
+}
+.projekt-title,
+.projekt-par {
+  margin-left: 16px;
 }
