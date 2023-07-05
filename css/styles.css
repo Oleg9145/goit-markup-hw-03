@@ -44,6 +44,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
+  padding: 24px 0;
 }
 /*-------------------------HEADER------------------------*/
 .header {
@@ -55,6 +56,9 @@ body {
   display: flex;
   align-items: center;
 }
+.nav a {
+  padding: 24px 0 24px;
+}
 .nav {
   display: flex;
   flex-grow: 1;
@@ -64,7 +68,6 @@ body {
 .header-ul {
   display: flex;
   gap: 40px;
-  padding: 24px 0 24px;
 }
 .address-ul {
   display: flex;
@@ -325,14 +328,13 @@ body {
   align-items: center;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
 
 .portfolio-list {
-  margin-bottom: 72px;
   width: calc((100% - 48px) / 3);
 }
 
