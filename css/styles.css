@@ -9,6 +9,16 @@
   --button-color: #4d5ae5;
   --background-color-body: #ffffff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 img {
   display: block;
 }
@@ -28,13 +38,12 @@ body {
 .lstudio {
   color: var(--color-fon);
   font-size: 18px;
-  margin-right: 76px;
 }
 .lstudio-footer {
   color: #f4f4fd;
   font-size: 16px;
 }
-.weblogo {
+.weblogo-f {
   color: var(--button-color);
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -43,13 +52,24 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+
+  margin: 0;
+}
+.weblogo {
+  color: var(--button-color);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
   margin-right: 76px;
+  font-family: "Raleway", sans-serif;
   padding: 24px 0;
 }
 /*-------------------------HEADER------------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
 }
 
 .header-div {
@@ -58,6 +78,7 @@ body {
 }
 .nav a {
   padding: 24px 0 24px;
+  display: block;
 }
 .nav {
   display: flex;
@@ -87,7 +108,7 @@ body {
   list-style: none;
 }
 .li-style {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -177,6 +198,7 @@ body {
 .our-team {
   background-color: #f4f4fd;
 }
+
 .footer {
   background-color: var(--color-fon);
 }
@@ -276,12 +298,9 @@ body {
 }
 /*------------------------our-team----------------------*/
 .our-team {
-  display: flex;
   padding: 120px 0;
 }
-.our-team-div {
-  margin: 0 auto;
-}
+
 .our-team-ul {
   padding: 0;
   display: flex;
@@ -294,7 +313,7 @@ body {
 .index-list {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
+  background: var(--background-color-body);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -324,6 +343,8 @@ body {
 /*-----------PORTFOLIO------------*/
 
 .botton-ul {
+  margin-top: 0;
+  padding-left: 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -335,7 +356,6 @@ body {
 }
 
 .portfolio-list {
-  margin: 0 auto;
   width: calc((100% - 48px) / 3);
 }
 
@@ -356,10 +376,7 @@ body {
 
 .projekt-title,
 .projekt-par {
-  margin-left: 16px;
 }
 .projekt-title {
-  margin: 0 auto;
   margin-bottom: 8px;
-  margin-left: 16px;
 }
